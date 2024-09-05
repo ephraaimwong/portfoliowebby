@@ -1,16 +1,52 @@
-h1{
-    text-align: center;
-    background-color: whitesmoke;
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-socials{
-    text-align:center;
-    text-align: justify;
-    grid-template-columns: 300px;
-    grid-template-rows: 300px;
-    background-color: whitesmoke;
 
+body {
+    background: #59a0f1d3;
 }
-headshot{
-    align-self: auto;
+
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent; /*color of the header bar*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 27px;
+    color: #000;
+    text-decoration:none; /*text can be underlined, strikethrough*/
+    font-weight: 600; /*makes text in logo heavier like bolding*/
+}
+.navbar a{/*a tags in navbar class*/
+    font-size: 18px;
+    color:#000;
+    text-decoration:none;
+    font-weight: 550;
+    margin-left: 35px;
+    transition: .3s; /*buffer time before elements switch to different states like hover*/
+}
+.navbar a:hover,
+.navbar a.active{ /*styling apply to hover state and active class within navbar class*/
+    color: #59a0f1d3;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    height: 50vh;
+    padding: 5px;;
+}
+
+.hero-container .button{
+    display: flex;
+    border-radius: 2rem;
+    background-color: yellowgreen;
 }
